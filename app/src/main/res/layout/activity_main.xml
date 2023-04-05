@@ -30,8 +30,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/editTextName"
             android:layout_width="370dp"
-            android:layout_height="48dp"
-            android:hint="hint" />
+            android:layout_height="48dp" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
@@ -56,9 +55,8 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:hint="hint"
-            android:maxLength="11"
-            android:inputType="number"/>
+            android:inputType="number"
+            android:maxLength="11" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
@@ -82,25 +80,49 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:hint="hint"
-            android:maxLength="7"/>
+            android:maxLength="7" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
         android:id="@+id/textViewPhone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginStart="16dp"
         android:text="@string/phone_label"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" />
+        tools:layout_editor_absoluteY="243dp" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="180dp"
-        android:layout_height="51dp"
+        android:id="@+id/textInputLayout2"
+        android:layout_width="333dp"
+        android:layout_height="44dp"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="390dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="330dp"
+            android:layout_height="match_parent"
+            android:inputType="number"
+            android:maxLength="11" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textViewCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/address_label"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout3" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout3"
+        android:layout_width="250dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewPhone">
 
@@ -108,9 +130,15 @@
             android:id="@+id/phoneEditText"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:hint="hint"
-            android:maxLength="11"
-            android:inputType="phone"/>
+            android:inputType="phone"
+            android:maxLength="11" />
     </com.google.android.material.textfield.TextInputLayout>
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="241dp"
+        android:layout_height="39dp"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="505dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

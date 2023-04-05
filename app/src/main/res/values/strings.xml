@@ -4,4 +4,7 @@
     <string name="rg_label">RG</string>
     <string name="name_label">Nome Completo</string>
     <string name="phone_label">Telefone</string>
+    <string name="city_label">Cidade</string>
+    <string name="state_label">Estado</string>
+    <string name="address_label">Endereço</string>
 </resources>
