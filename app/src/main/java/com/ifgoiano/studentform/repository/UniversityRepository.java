@@ -26,6 +26,7 @@ public class UniversityRepository {
         universities.put("IF Goiano Campus Urutaí",
                 new University(
                         "IF Goiano Campus Urutaí",
+                        "Goiás",
                         List.of(
                                 new Course(
                                     "Bacharelado em Sistemas de Informação",
@@ -47,6 +48,7 @@ public class UniversityRepository {
         universities.put("IF Goiano Campus Iporá",
                 new University(
                         "IF Goiano Campus Iporá",
+                        "Goiás",
                         List.of(
                                 new Course(
                                         "Bacharelado em Nutrição",

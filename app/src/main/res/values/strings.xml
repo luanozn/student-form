@@ -7,4 +7,6 @@
     <string name="city_label">Cidade</string>
     <string name="state_label">Estado</string>
     <string name="address_label">Endereço</string>
+    <string name="university_name">Universidade</string>
+    <string name="course">Curso</string>
 </resources>

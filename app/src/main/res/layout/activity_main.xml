@@ -135,10 +135,38 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <Spinner
-        android:id="@+id/spinner"
+        android:id="@+id/universityName"
         android:layout_width="241dp"
         android:layout_height="39dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="192dp"
+        android:layout_marginBottom="44dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/course"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="547dp" />
+
+    <Spinner
+        android:id="@+id/courseSpinner"
+        android:layout_width="242dp"
+        android:layout_height="40dp"
         tools:layout_editor_absoluteX="25dp"
-        tools:layout_editor_absoluteY="505dp" />
+        tools:layout_editor_absoluteY="582dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/university_name"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="452dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
