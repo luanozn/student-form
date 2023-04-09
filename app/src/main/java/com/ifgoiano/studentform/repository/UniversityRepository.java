@@ -5,6 +5,7 @@ import static com.ifgoiano.studentform.entities.enums.Shift.EVENING_NIGHT;
 import static com.ifgoiano.studentform.entities.enums.Shift.FULL_TIME;
 import static com.ifgoiano.studentform.entities.enums.Shift.MORNING;
 
+import com.ifgoiano.studentform.R;
 import com.ifgoiano.studentform.entities.Course;
 import com.ifgoiano.studentform.entities.University;
 import com.ifgoiano.studentform.entities.enums.Shift;
@@ -42,7 +43,9 @@ public class UniversityRepository {
                                     "Licenciatura em Química",
                                         3000,
                                         List.of(AFTERNOON, EVENING_NIGHT)
-                                )))
+                                )),
+                        R.drawable.if_logo
+                )
         );
 
         universities.put("IF Goiano Campus Iporá",
@@ -64,7 +67,9 @@ public class UniversityRepository {
                                         "Gestão da Tecnologia de Informação",
                                         3000,
                                         List.of(EVENING_NIGHT)
-                                )))
+                                )),
+                        R.drawable.dragon_ball
+                        )
         );
 
         return universities;

@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.ifgoiano.studentform.R;
@@ -50,7 +51,9 @@ public class UniversityAdapter extends BaseAdapter {
         View rowView = inflater.inflate(R.layout.university_adapter, null, true);
 
         TextView text = rowView.findViewById(R.id.itemId);
+        ImageView image = rowView.findViewById(R.id.campusImage);
         text.setText(university.getName());
+        image.setImageResource(university.getLogo());
 
         return rowView;
     }
